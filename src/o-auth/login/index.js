@@ -1,0 +1,1 @@
+export { OAuthLoginComponent } from './components';
