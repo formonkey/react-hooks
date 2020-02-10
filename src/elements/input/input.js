@@ -1,19 +1,27 @@
 import React from 'react';
-
-import { TextField } from '@material-ui/core';
+import TextField from '@material-ui/core/TextField';
+import FormControl from '@material-ui/core/FormControl';
 import withStyles from '@material-ui/core/styles/withStyles';
+import FormHelperText from '@material-ui/core/FormHelperText';
 
 import { inputStyles } from './input.style';
 
 export const Input = withStyles(inputStyles)(({ classes, background, color, ...props }) => (
-    <TextField
-        { ...props }
-        select={ false }
-        className={ classes.root }
-        onChange={ props.onChange }
-        InputProps={{ className: classes.input }}
-        InputLabelProps={{ className: classes.label }}
-        variant={ props.outlined ? 'outlined' : props.filled ? 'filled' : '' }
-        helperText={ props.error ? props.errorMessage : props.fieldMessage }
-    />
+    <FormControl className={ classes.root }>
+        <TextField
+            { ...props }
+            select={ false }
+            label={ props.name }
+            onChange={ props.onChange }
+            InputProps={{ className: classes.input }}
+            InputLabelProps={{ className: classes.label }}
+            variant={ props.outlined ? 'outlined' : props.filled ? 'filled' : '' }
+        />
+        <FormHelperText 
+            id="my-helper-text" 
+            error={ props.error }
+        >
+            { props.error ? props.errorMessage : props.fieldMessage }
+        </FormHelperText>
+    </FormControl>
 ));

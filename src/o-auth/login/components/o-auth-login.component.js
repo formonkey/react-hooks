@@ -1,20 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
-import { OAuthConsumer } from '../../../pages/o-auth/contexts';
+import { UserContext } from '../../../core/user';
 import { OAuthLoginFormComponent } from './o-auth-login-form.component';
 
 export const OAuthLoginComponent = () => {
-    return (
-        <OAuthConsumer>
-            {
-                (service) => (
-                    <>
-                        <h2 onClick={ service.signIn }>Login form</h2>
+    const { dispatch } = useContext(UserContext);
+    
+    return (   
+        <>
+            <h2>Login form</h2>
 
-                        <OAuthLoginFormComponent />
-                    </>
-                )
-            }
-        </OAuthConsumer>
+            <OAuthLoginFormComponent dispatch={ dispatch } />
+        </>
     );
-};
+}

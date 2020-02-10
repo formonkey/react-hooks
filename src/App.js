@@ -1,14 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useReducer } from 'react';
 
 import { OAuthComponent } from './pages/o-auth';
+import { userReducer, UserContext } from './core/user';
 
 function App() {
-    useEffect(() => {
-        console.log('[APP] USE EFFECT');
-    }, []);
+    useEffect(() => console.log('[APP] USE EFFECT'), []);
+
+    const [ state, dispatch ] = useReducer(userReducer, {});
 
     return (
-        <OAuthComponent />
+        <UserContext.Provider value={{ state, dispatch }}>
+            <OAuthComponent />
+        </UserContext.Provider>
     );
 }
 

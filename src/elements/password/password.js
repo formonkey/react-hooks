@@ -6,13 +6,13 @@ import IconButton from '@material-ui/core/IconButton';
 import Visibility from '@material-ui/icons/Visibility';
 import FormControl from '@material-ui/core/FormControl';
 import FilledInput from '@material-ui/core/FilledInput';
+import OutlinedInput from '@material-ui/core/OutlinedInput';
 import withStyles from '@material-ui/core/styles/withStyles';
 import VisibilityOff from '@material-ui/icons/VisibilityOff';
+import FormHelperText from '@material-ui/core/FormHelperText';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import OutlinedInput from '@material-ui/core/OutlinedInput';
 
 import { passwordStyles } from './password.style';
-import { TextField } from '@material-ui/core';
 
 export const Password = withStyles(passwordStyles)(({ classes, error, ...props}) => {
     const [ show, setShow ] = useState(false);
@@ -23,7 +23,7 @@ export const Password = withStyles(passwordStyles)(({ classes, error, ...props})
         <FormControl classes={{ root: classes.root }}
                      variant={ props.outlined ? 'outlined' : props.filled ? 'filled' : '' }>
             <InputLabel error={ error } htmlFor="password">
-                { props.label }
+                { props.name }
             </InputLabel>
             <CustomInput
                 id="password"
@@ -46,10 +46,15 @@ export const Password = withStyles(passwordStyles)(({ classes, error, ...props})
                         </IconButton>
                     </InputAdornment>
                 }
-                helperText={ error ? props.errorMessage : props.fieldMessage }
                 error={ error }
                 { ...props }
             />
+            <FormHelperText 
+                id="my-helper-text" 
+                error={ error }
+            >
+                { error ? props.errorMessage : props.fieldMessage }
+            </FormHelperText>
         </FormControl>
 
     );

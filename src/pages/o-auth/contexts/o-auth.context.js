@@ -1,6 +1,6 @@
-import React from 'react';
+import { createContext } from 'react';
 
-const OAuthContext = React.createContext({});
+const OAuthContext = createContext({});
 
 export const OAuthConsumer = OAuthContext.Consumer;
 export const OAuthProvider = OAuthContext.Provider;
