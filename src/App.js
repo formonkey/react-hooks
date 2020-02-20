@@ -1,17 +1,31 @@
-import React, { useEffect, useReducer } from 'react';
+import React, { useReducer, useMemo } from 'react';
 
-import { OAuthComponent } from './pages/o-auth';
-import { userReducer, UserContext } from './core/user';
+import { ThemeProvider } from '@material-ui/core/styles';
+
+import { theme } from './styles';
+import { userReducer } from './core/user';
+import { AppRouter } from './app.routing';
+import { usePersistReducer } from './core/persist-reducer';
+import { snackBarReducer, SnackBarContext, SnackBarComponent } from './elements/snack-bar';
+
 
 function App() {
-    useEffect(() => console.log('[APP] USE EFFECT'), []);
+    const [ snackState, snackDispatch ] = useReducer(snackBarReducer, {});
+    const [ userState, userDispatch ] = usePersistReducer(userReducer, {}, 'auth');
 
-    const [ state, dispatch ] = useReducer(userReducer, {});
+    const RouterComponent = useMemo(() =>
+        <AppRouter state={ userState } dispatch={ userDispatch } feedback={ snackDispatch } />, 
+        [ userState, userDispatch, snackDispatch ]);
 
     return (
-        <UserContext.Provider value={{ state, dispatch }}>
-            <OAuthComponent />
-        </UserContext.Provider>
+        <ThemeProvider theme={ theme }>
+            <SnackBarContext.Provider value={{ state: snackState, dispatch: snackDispatch}}>
+                <SnackBarComponent { ...snackState } />
+                {
+                    RouterComponent
+                }
+            </SnackBarContext.Provider>
+        </ThemeProvider>
     );
 }
 

@@ -5,6 +5,8 @@ import { OAuthLoginFormComponent } from './o-auth-login-form.component';
 
 export const OAuthLoginComponent = () => {
     const { dispatch } = useContext(UserContext);
+
+    console.log('LOGIN');
     
     return (   
         <>

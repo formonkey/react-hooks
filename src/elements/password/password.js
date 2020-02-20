@@ -14,14 +14,14 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 
 import { passwordStyles } from './password.style';
 
-export const Password = withStyles(passwordStyles)(({ classes, error, ...props}) => {
+export const Password = withStyles(passwordStyles)(({ classes, error, outlined, ...props}) => {
     const [ show, setShow ] = useState(false);
 
-    const CustomInput = props.outlined ? OutlinedInput : props.filled ? FilledInput : Input;
+    const CustomInput = outlined ? OutlinedInput : props.filled ? FilledInput : Input;
 
     return (
         <FormControl classes={{ root: classes.root }}
-                     variant={ props.outlined ? 'outlined' : props.filled ? 'filled' : '' }>
+                     variant={ outlined ? 'outlined' : props.filled ? 'filled' : '' }>
             <InputLabel error={ error } htmlFor="password">
                 { props.name }
             </InputLabel>

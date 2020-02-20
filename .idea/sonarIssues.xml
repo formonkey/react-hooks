@@ -3,97 +3,102 @@
   <component name="issues">
     <option name="index">
       <map>
-        <entry key="$APPLICATION_CONFIG_DIR$/scratches/scratch_10.es6">
+        <entry key="$PROJECT_DIR$/src/app.context.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/public/styles/_all.scss">
+        <entry key="$PROJECT_DIR$/src/app.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/public/styles/settings/_all.scss">
+        <entry key="$PROJECT_DIR$/src/app.router.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/public/styles/settings/_fonts.scss">
+        <entry key="$PROJECT_DIR$/src/app.routing.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/App.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/contexts/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/commons/field-error/field-error.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/effects/pouch-db.mount.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/index.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/hooks/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/input/index.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/hooks/pouch-db.hook.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/input/input.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/instance/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/input/input.style.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/instance/pouch-db.instance.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/input/input.styled.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/reducers/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/password/index.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/reducers/pouch-db.reducer.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/password/password.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/services/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/password/password.style.js">
+        <entry key="$PROJECT_DIR$/src/core/pouch-db/services/pouch-db.service.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/elements/text-field/text-field.js">
+        <entry key="$PROJECT_DIR$/src/core/with-styles-theme/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/hello-world/components/hello-world-child.component.js">
+        <entry key="$PROJECT_DIR$/src/core/with-styles-theme/providers/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/hello-world/components/hello-world.component.js">
+        <entry key="$PROJECT_DIR$/src/core/with-styles-theme/providers/with-styles-theme.provider.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/hello-world/components/index.js">
+        <entry key="$PROJECT_DIR$/src/core/with-styles-theme/providers/with-theme-styles.provider.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/hello-world/index.js">
+        <entry key="$PROJECT_DIR$/src/core/with-theme/providers/with-theme.provider.js">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/core/withe-theme-styles/index.js">
           <value>
             <set />
           </value>
@@ -108,32 +113,32 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/components/index.js">
+        <entry key="$PROJECT_DIR$/src/managements/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/components/o-auth.component.js">
+        <entry key="$PROJECT_DIR$/src/managements/list/components/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/effects/index.js">
+        <entry key="$PROJECT_DIR$/src/managements/list/components/management-list.component.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/effects/o-auth-mount.effect.js">
+        <entry key="$PROJECT_DIR$/src/managements/list/constants/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/index.js">
+        <entry key="$PROJECT_DIR$/src/managements/list/constants/index.ts">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/login/components/index.js">
+        <entry key="$PROJECT_DIR$/src/managements/list/index.js">
           <value>
             <set />
           </value>
@@ -143,112 +148,97 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/login/components/o-auth-login.component.js">
+        <entry key="$PROJECT_DIR$/src/pages/managements/components/management.component.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/login/effects/index.js">
+        <entry key="$PROJECT_DIR$/src/pages/managements/components/management.router.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/login/effects/o-auth-login-mount.effect.js">
+        <entry key="$PROJECT_DIR$/src/pages/managements/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/o-auth/login/index.js">
+        <entry key="$PROJECT_DIR$/src/pages/managements/management.routing.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/components/o-auth.component.js">
+        <entry key="$PROJECT_DIR$/src/shared/list/components/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/contexts/index.js">
+        <entry key="$PROJECT_DIR$/src/shared/list/components/list-fitler.component.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/contexts/o-auth.context.js">
+        <entry key="$PROJECT_DIR$/src/shared/list/components/list.component.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/effects/o-auth-mount.effect.js">
+        <entry key="$PROJECT_DIR$/src/shared/list/components/list.styles.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/index.js">
+        <entry key="$PROJECT_DIR$/src/shared/list/constants/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/providers/index.js">
+        <entry key="$PROJECT_DIR$/src/shared/list/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/providers/o-auth.provider.js">
+        <entry key="$PROJECT_DIR$/src/shared/nav-bar/components/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/requests/index.js">
+        <entry key="$PROJECT_DIR$/src/shared/nav-bar/components/nav-bar.component.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/requests/o-auth-sign-in.request.js">
+        <entry key="$PROJECT_DIR$/src/shared/nav-bar/components/nav-bar.styles.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/services/index.js">
+        <entry key="$PROJECT_DIR$/src/shared/nav-bar/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/services/o-auth-sign-in.service.js">
+        <entry key="$PROJECT_DIR$/src/styles/constants/index.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/pages/o-auth/services/o-auth.service.js">
+        <entry key="$PROJECT_DIR$/src/utils.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../../servihabitat/backend/.env">
+        <entry key="$PROJECT_DIR$/../../servihabitat/wapis-fe/client/src/commons/pouch-db/providers/pouch-db-content.provider.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../../servihabitat/backend/src/cloudant/models/cloudant.model.ts">
+        <entry key="$PROJECT_DIR$/../../servihabitat/wapis-fe/client/src/incidences/components/incidences-form-buttons.component.js">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/../../servihabitat/backend/src/cloudant/services/cloudant.service.ts">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../servihabitat/wapis-fe/client/.env">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../servihabitat/wapis-fe/client/src/commons/pouch-db/providers/pouch-db.provider.js">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/../../servihabitat/wapis/.env">
+        <entry key="$PROJECT_DIR$/../../servihabitat/wapis-fe/client/src/incidences/components/incidences-modal.component.js">
           <value>
             <set />
           </value>

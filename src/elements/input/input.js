@@ -11,6 +11,7 @@ export const Input = withStyles(inputStyles)(({ classes, background, color, ...p
         <TextField
             { ...props }
             select={ false }
+            outlined={ props.outlined ? 'true' : 'false' }
             label={ props.name }
             onChange={ props.onChange }
             InputProps={{ className: classes.input }}

@@ -6,7 +6,7 @@ import { OAuthConsumer } from '../../../pages/o-auth';
 import { Input, Password, Button } from './../../../elements';
 
 export const OAuthLoginFormComponent = withForm(OAUTH_LOGIN_FORM)(
-    ({ form, validators, loading, handleChange, onSubmit, dispatch }) => (
+    ({ form, validators, loading, handleChange, onSubmit, dispatch, feedback }) => (
         <OAuthConsumer>
             {
                 ({ signIn }) => (
@@ -14,7 +14,7 @@ export const OAuthLoginFormComponent = withForm(OAUTH_LOGIN_FORM)(
                         <Input
                             value={ form.enrollment }
                             error={ validators.enrollment.hasError }
-                            errorMessage={ validators.enrollment.message }
+                            errormessage={ validators.enrollment.message }
                             outlined
                             name="enrollment" 
                             onChange={ handleChange }
@@ -24,7 +24,7 @@ export const OAuthLoginFormComponent = withForm(OAUTH_LOGIN_FORM)(
                             outlined
                             value={ form.password }
                             error={ validators.password.hasError }
-                            errorMessage={ validators.password.message }
+                            errormessage={ validators.password.message }
                             name="password"
                             onChange={ handleChange }
                         />
@@ -32,7 +32,10 @@ export const OAuthLoginFormComponent = withForm(OAUTH_LOGIN_FORM)(
                         <Button
                             loading={ loading }
                             color="primary"
-                            onClick={ onSubmit(signIn, (payload) => dispatch({ payload, type: 'LOGIN' })) } 
+                            onClick={ onSubmit(signIn, (payload) => dispatch({ payload: { 
+                                    ...payload, 
+                                    enrollment: form.enrollment 
+                                }, type: 'LOGIN' })) } 
                         >
                             SIGN IN
                         </Button>

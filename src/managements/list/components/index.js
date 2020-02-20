@@ -1,0 +1,1 @@
+export { ManagementListComponent } from './management-list.component';

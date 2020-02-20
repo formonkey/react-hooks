@@ -1,0 +1,1 @@
+export { pouchDBReducer } from './pouch-db.reducer';

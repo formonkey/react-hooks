@@ -14,7 +14,7 @@ export const Button = withStyles(buttonStyles)(({ classes, variant = 'contained'
         disableElevation>
             {
                 loading ? <CircularProgress size={ 25 } 
-                                color={ variant === 'contained' ? '' : props.color || props.loadingColor } 
+                                color={ variant === 'contained' ? 'primary' : props.color || props.loadingColor } 
                             /> : children
             }
     </MaterialButton>  

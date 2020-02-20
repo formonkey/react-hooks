@@ -2,6 +2,7 @@ import GraphQLClient from 'apollo-boost';
 
 const GraphQL = {
     instance: null,
+    feedback: null,
     query: (query, dto) => {
         if (navigator.onLine) {
             return GraphQL.instance.query({
@@ -29,13 +30,19 @@ const GraphQL = {
 
         return Promise.resolve(res.data[keys[0]]);
     },
-    callbackCatch: (error) => {
-        return Promise.reject(error);
+    callbackCatch: (res) => {
+        const errors = res.graphQLErrors.map((error) => error.message);
+
+        GraphQL.feedback({ title: errors[0] });
+
+        return Promise.reject(errors);
     },
 };
 
 const GQL = {
-    init: (auth = {}) => {
+    init: (auth = {}, feedback) => {
+        GraphQL.feedback = (data) => feedback({ type: 'SNACK_ON', payload: { ...data, visible: true, severity: 'error' }});
+
         GraphQL.instance = new GraphQLClient({
             uri: process.env.REACT_APP_GRAPHQL,
             request: (operation) => {

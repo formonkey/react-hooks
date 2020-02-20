@@ -1,5 +1,16 @@
+@import '~@sandstreamdev/react-swipeable-list/dist/styles.css';
+
 @import "../public/styles/all";
 
 body {
-  font-family: 'roboto', serif;
+    margin: 0;
+    font-family: 'roboto', serif;
+    
+    .SwipeableList_swipeableList__1FACG {
+        background: transparent;
+        
+        .SwipeableListItem_content__3wbMa {
+            background: transparent;
+        }
+    }
 }
